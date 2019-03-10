@@ -26,6 +26,12 @@ const NavbarRight = styled(Right)`
       display: inline-block;
       font-size: 24px;
       cursor: pointer;
+
+      svg {
+        fill: white;
+        width: 42px;
+        margin: -11px;
+      }
     }
   }
 `

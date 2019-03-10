@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
-import Navbar from './theme/Navbar'
 import CssBaseline from './components/CssBaseline'
-import Home from './pages/home'
-class App extends Component {
-  render() {
-    return (
-      <>
-        <CssBaseline />
-        <div className="App">
-          <Navbar />
-          <Home />
-        </div>
-      </>
-    )
-  }
+import Home from './components/HomePage/HomePage'
+import Navigation from './components/Navigation'
+import { UITemplate } from './components/useUIComponents'
+import Navbar from './theme/Navbar'
+import HomePage from './theme/HomePage'
+
+const App: React.FunctionComponent = () => {
+  return (
+    <>
+      <CssBaseline />
+      <UITemplate Navigation={Navbar} HomePage={HomePage}>
+        <Navigation />
+        <Home />
+      </UITemplate>
+    </>
+  )
 }
 
 export default App
