@@ -4,12 +4,15 @@
   "private": true,
   "dependencies": {
     "@types/jest": "24.0.11",
+    "@types/lodash": "^4.14.122",
     "@types/node": "11.11.0",
     "@types/react": "16.8.7",
     "@types/react-dom": "16.8.2",
+    "import-all.macro": "^2.0.3",
+    "lodash": "^4.17.11",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8",
+    "react-scripts-mdx": "^2.1.4",
     "typescript": "3.3.3333"
   },
   "scripts": {
