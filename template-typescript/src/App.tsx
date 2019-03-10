@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Navbar from './components/Navbar'
+import Navbar from './theme/Navbar'
 import CssBaseline from './components/CssBaseline'
-import Home from './pages/home/Home'
+import Home from './pages/home'
 class App extends Component {
   render() {
     return (
