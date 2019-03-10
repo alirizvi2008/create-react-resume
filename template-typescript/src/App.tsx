@@ -5,6 +5,7 @@ import Navigation from './components/Navigation'
 import { UITemplate } from './components/useUIComponents'
 import Navbar from './theme/Navbar'
 import HomePage from './theme/HomePage'
+import ResumePage from './theme/ResumePage'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 const App: React.FunctionComponent = () => {
@@ -19,6 +20,7 @@ const App: React.FunctionComponent = () => {
             <Link to="/contact">Contact</Link>
           </Navigation>
           <Route path="/" exact component={Home} />
+          <Route path="/resume" component={ResumePage} />
         </UITemplate>
       </Router>
     </>

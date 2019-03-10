@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { HomeContainer, Left, Right } from './Home.styled'
+import { HomeContainer, Left, Right } from './HomePage.styled'
 
 interface Props {
   profilePicUrl: string
@@ -8,7 +8,7 @@ interface Props {
   descriptions: string[]
 }
 
-const Home: React.FunctionComponent<Props> = props => {
+const HomePage: React.FunctionComponent<Props> = props => {
   const { profilePicUrl, title, subTitle, descriptions } = props
   return (
     <HomeContainer>
@@ -30,4 +30,4 @@ const Home: React.FunctionComponent<Props> = props => {
   )
 }
 
-export default Home
+export default HomePage
