@@ -5,7 +5,7 @@ const NavbarContainer = styled(Container)`
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 3;
+  z-index: 100;
 `
 
 const NavbarLeft = styled(Left)``
@@ -31,6 +31,14 @@ const NavbarRight = styled(Right)`
         fill: white;
         width: 42px;
         margin: -11px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

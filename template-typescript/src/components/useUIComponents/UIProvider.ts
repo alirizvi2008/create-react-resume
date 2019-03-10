@@ -7,8 +7,12 @@ interface HomePageProps {
   descriptions: string[]
 }
 
+interface NavigationProps {
+  github?: string
+}
+
 export interface UIComponents {
-  Navigation: React.FunctionComponent
+  Navigation: React.FunctionComponent<NavigationProps>
   HomePage: React.FunctionComponent<HomePageProps>
 }
 
