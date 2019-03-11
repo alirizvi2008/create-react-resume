@@ -4,7 +4,8 @@ import { Container, Right, Left } from '../SplitContainer'
 const ResumeContainer = styled(Container)`
   position: relative;
   float: left;
-  padding: 100px 0 0 0;
+  padding: 50px 0 0 0;
+  min-height: 500px;
 `
 
 const ResumeLeft = styled(Left)``
