@@ -1,5 +1,5 @@
 import React from 'react'
-import CssBaseline from './components/CssBaseline'
+import CssBaseline from './theme/CssBaseline'
 import Home from './components/HomePage/HomePage'
 import Navigation from './components/Navigation'
 import { UITemplate } from './components/useUIComponents'
@@ -14,11 +14,11 @@ const App: React.FunctionComponent = () => {
       <Router>
         <UITemplate Navigation={Navbar} HomePage={HomePage}>
           <CssBaseline />
-          <Navigation github="https://github.com/matmalkowski">
+          {/* <Navigation github="https://github.com/matmalkowski">
             <Link to="/">Home</Link>
             <Link to="/resume">Resume</Link>
             <Link to="/contact">Contact</Link>
-          </Navigation>
+          </Navigation> */}
           <Route path="/" exact component={Home} />
           <Route path="/resume" component={ResumePage} />
         </UITemplate>

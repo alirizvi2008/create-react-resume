@@ -1,4 +1,4 @@
-import styled from '../../styled'
+import styled from '../styled'
 import { Container, Right, Left } from '../SplitContainer'
 
 const HomeContainer = styled(Container)`
