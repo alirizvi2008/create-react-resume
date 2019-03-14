@@ -7,6 +7,7 @@ import Navbar from './theme/Navbar'
 import HomePage from './theme/HomePage'
 import ResumePage from './theme/ResumePage'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { Page, Header, Footer, Main } from './theme/PageLayout'
 
 const App: React.FunctionComponent = () => {
   return (
@@ -14,13 +15,20 @@ const App: React.FunctionComponent = () => {
       <Router>
         <UITemplate Navigation={Navbar} HomePage={HomePage}>
           <CssBaseline />
-          {/* <Navigation github="https://github.com/matmalkowski">
-            <Link to="/">Home</Link>
-            <Link to="/resume">Resume</Link>
-            <Link to="/contact">Contact</Link>
-          </Navigation> */}
-          <Route path="/" exact component={Home} />
-          <Route path="/resume" component={ResumePage} />
+          <Page>
+            <Header>
+              <Navigation github="https://github.com/matmalkowski">
+                <Link to="/">Home</Link>
+                <Link to="/resume">Resume</Link>
+                <Link to="/contact">Contact</Link>
+              </Navigation>
+            </Header>
+            <Main>
+              <Route path="/" exact component={Home} />
+              <Route path="/resume" component={ResumePage} />
+            </Main>
+            <Footer>footer</Footer>
+          </Page>
         </UITemplate>
       </Router>
     </>

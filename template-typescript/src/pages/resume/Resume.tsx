@@ -1,5 +1,4 @@
 import * as React from 'react'
-import Experience from '../../components/Experience/Experience'
 import AsyncMdxComponent from '../../components/AsyncMdxComponent'
 
 const Resume: React.FunctionComponent = props => {
@@ -17,12 +16,8 @@ const Resume: React.FunctionComponent = props => {
 
   return (
     <div>
-      {exps.map((e: any) => {
-        return (
-          <Experience key={e.title} title={e.title}>
-            <AsyncMdxComponent getView={e.getView} />
-          </Experience>
-        )
+      {exps.map((e: any, index: number) => {
+        return <AsyncMdxComponent key={index} getView={e.getView} />
       })}
     </div>
   )
