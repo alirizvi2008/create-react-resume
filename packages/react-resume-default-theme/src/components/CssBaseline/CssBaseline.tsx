@@ -1,4 +1,4 @@
-import { createGlobalStyle } from '../styled'
+import { createGlobalStyle } from '../../styled'
 
 const CssBaseline = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Montserrat');

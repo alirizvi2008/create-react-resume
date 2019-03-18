@@ -1,5 +1,5 @@
 import * as React from 'react'
-import styled from '../styled'
+import styled from '../../styled'
 import { Left, Right, Container } from '../SplitContainer'
 
 const Page = styled('div')`

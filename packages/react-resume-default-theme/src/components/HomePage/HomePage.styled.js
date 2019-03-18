@@ -1,7 +1,6 @@
-import styled from '../styled'
-import { Container, Right, Left } from '../SplitContainer'
-
-const HomeContainer = styled(Container)`
+import styled from '../../styled';
+import { Container, Right, Left } from '../SplitContainer';
+const HomeContainer = styled(Container) `
   position: absolute;
   left: 0;
   top: 0;
@@ -25,15 +24,13 @@ const HomeContainer = styled(Container)`
     max-width: 75%;
     color: #f5f5f5;
   }
-`
-
-const RightCenterVertically = styled(Right)`
+`;
+const RightCenterVertically = styled(Right) `
   display: flex;
   align-items: center;
   justify-content: left;
-`
-
-const LeftCenterVertically = styled(Left)`
+`;
+const LeftCenterVertically = styled(Left) `
   display: flex;
   align-items: center;
   justify-content: right;
@@ -46,5 +43,5 @@ const LeftCenterVertically = styled(Left)`
     width: 60%;
     border-radius: 50%;
   }
-`
-export { HomeContainer, RightCenterVertically as Right, LeftCenterVertically as Left }
+`;
+export { HomeContainer, RightCenterVertically as Right, LeftCenterVertically as Left };

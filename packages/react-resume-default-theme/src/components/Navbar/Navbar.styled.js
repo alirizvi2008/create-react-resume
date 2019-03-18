@@ -1,16 +1,13 @@
-import styled from '../styled'
-import { Container, Left, Right } from '../SplitContainer'
-
-const NavbarContainer = styled(Container)`
+import styled from '../../styled';
+import { Container, Left, Right } from '../SplitContainer';
+const NavbarContainer = styled(Container) `
   position: fixed;
   left: 0px;
   top: 0px;
   z-index: 100;
-`
-
-const NavbarLeft = styled(Left)``
-
-const NavbarRight = styled(Right)`
+`;
+const NavbarLeft = styled(Left) ``;
+const NavbarRight = styled(Right) `
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +39,5 @@ const NavbarRight = styled(Right)`
       }
     }
   }
-`
-
-export { NavbarContainer, NavbarLeft, NavbarRight }
+`;
+export { NavbarContainer, NavbarLeft, NavbarRight };

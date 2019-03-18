@@ -3,21 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "react-resume-default-theme": "1.0.0",
     "@types/jest": "24.0.11",
     "@types/lodash": "^4.14.122",
     "@types/node": "11.11.0",
     "@types/react": "16.8.7",
     "@types/react-dom": "16.8.2",
     "@types/react-router-dom": "^4.3.1",
-    "@types/styled-components": "^4.1.12",
     "import-all.macro": "^2.0.3",
     "lodash": "^4.17.11",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",
     "react-scripts-mdx": "^2.1.4",
-    "styled-components": "^4.1.3",
-    "typescript": "3.3.3333"
+    "typescript": "3.3.3333",
+    "styled-components": "^4.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
