@@ -28,7 +28,9 @@ const App: React.FunctionComponent = () => {
               <Route path="/" exact component={Home} />
               <Route path="/resume" component={Resume} />
             </Main>
-            <Footer>footer</Footer>
+            <Footer>
+              Created with <a href="https://github.com/matmalkowski/create-react-resume">Create React Resume 📄</a>
+            </Footer>
           </Page>
         </UITemplate>
       </Router>
