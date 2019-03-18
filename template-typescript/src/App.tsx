@@ -1,6 +1,7 @@
 import React from 'react'
 import CssBaseline from './theme/CssBaseline'
 import Home from './components/HomePage/HomePage'
+import Resume from './components/Resume'
 import Navigation from './components/Navigation'
 import { UITemplate } from './components/useUIComponents'
 import Navbar from './theme/Navbar'
@@ -13,7 +14,7 @@ const App: React.FunctionComponent = () => {
   return (
     <>
       <Router>
-        <UITemplate Navigation={Navbar} HomePage={HomePage}>
+        <UITemplate Navigation={Navbar} HomePage={HomePage} ResumePage={ResumePage}>
           <CssBaseline />
           <Page>
             <Header>
@@ -25,7 +26,7 @@ const App: React.FunctionComponent = () => {
             </Header>
             <Main>
               <Route path="/" exact component={Home} />
-              <Route path="/resume" component={ResumePage} />
+              <Route path="/resume" component={Resume} />
             </Main>
             <Footer>footer</Footer>
           </Page>

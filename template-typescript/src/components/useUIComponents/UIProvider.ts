@@ -14,6 +14,7 @@ interface NavigationProps {
 export interface UIComponents {
   Navigation: React.FunctionComponent<NavigationProps>
   HomePage: React.FunctionComponent<HomePageProps>
+  ResumePage: React.FunctionComponent
 }
 
 const UIContext = React.createContext<UIComponents>({} as UIComponents)

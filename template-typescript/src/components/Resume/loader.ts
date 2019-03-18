@@ -1,10 +1,10 @@
 import importAll from 'import-all.macro'
 
-const experiencesModules = importAll.deferred('./**/experience.ts')
+const experiencesModules = importAll.deferred('../../pages/resume/**/experience.ts')
 const importExperience = (pathname: string) => experiencesModules[pathname]()
 const expPathnamses = Object.keys(experiencesModules)
 
-const experiences = expPathnamses.map(async (pathname: string) => {
+const loader = expPathnamses.map(async (pathname: string) => {
   const { default: experience } = await importExperience(pathname)
   return {
     getView: async () => {
@@ -15,4 +15,4 @@ const experiences = expPathnamses.map(async (pathname: string) => {
   }
 })
 
-export default experiences
+export default loader

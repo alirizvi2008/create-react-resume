@@ -8,6 +8,7 @@ const AsyncMdxComponent: React.FunctionComponent<Props> = props => {
   const [view, setView] = React.useState<any>(undefined)
   const loadView = async () => {
     const getComponent = await getView
+    console.log(getView)
     setView(await getComponent())
   }
 

@@ -1,19 +1,25 @@
 import styled from '../styled'
 import { Container, Right, Left } from '../SplitContainer'
 
-const ResumeContainer = styled(Container)`
+const ResumeContainer = styled('div')`
   display: flex;
-  flex-direction: column;
-  position: relative;
-  float: left;
-  padding: 50px 0 0 0;
+  direction: row;
+  height: 100%;
 `
 
-const ResumeLeft = styled(Left)`
-  flex: 0 1 auto;
-`
+const ResumeLeft = styled(Left)``
 
 const ResumeRight = styled(Right)`
-  flex: 0 1 auto;
+  section {
+    padding: 64px 0 0 16px;
+    width: 75%;
+    svg {
+      height: 32px;
+      position: absolute;
+      left: 10%;
+      margin-top: 32px;
+    }
+  }
 `
+
 export { ResumeContainer, ResumeRight as Right, ResumeLeft as Left }
