@@ -4,7 +4,7 @@ import Resume from './components/Resume'
 import Navigation from './components/Navigation'
 import { UITemplate } from './components/useUIComponents'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import * as Theme from 'react-resume-default-theme'
+import * as Theme from '@create-react-resume/theme-default'
 
 const App: React.FunctionComponent = () => {
   return (

@@ -4,7 +4,7 @@ import pkg from './package.json'
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx']
 
-const name = 'ReactResumeDefaultTheme'
+const name = 'ThemeDefault'
 
 export default {
   input: './src/index.ts',
@@ -18,13 +18,19 @@ export default {
     resolve({ extensions }),
 
     // Compile TypeScript/JavaScript files
-    babel({ extensions, include: ['src/**/*'] }),
+    babel({ extensions, include: ['src/**/*'], exclude: 'node_modules/**' }),
   ],
 
   output: [
     {
+      file: pkg.main,
+      format: 'umd',
+      name,
+    },
+    {
       file: pkg.module,
       format: 'es',
+      name,
     },
     {
       file: pkg.browser,

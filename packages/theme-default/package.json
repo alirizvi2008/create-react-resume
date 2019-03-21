@@ -1,10 +1,10 @@
 {
-  "name": "react-resume-default-theme",
+  "name": "@create-react-resume/theme-default",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
-  "module": "dist/react-resume-default-theme.esm.js",
-  "browser": "dist/react-resume-default-theme.iife.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.iife.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
     "type-check": "tsc --noEmit",
