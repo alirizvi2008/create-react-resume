@@ -1,6 +1,6 @@
 import importAll from 'import-all.macro'
 
-const experiencesModules = importAll.deferred('../../pages/resume/**/experience.ts')
+const experiencesModules = importAll.deferred('../../pages/roles/**/experience.ts')
 const importExperience = (pathname: string) => experiencesModules[pathname]()
 const expPathnamses = Object.keys(experiencesModules)
 

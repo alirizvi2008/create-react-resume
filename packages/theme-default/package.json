@@ -7,10 +7,11 @@
   "browser": "dist/index.iife.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
+    "clean": "rimraf ./dist",
     "type-check": "tsc --noEmit",
     "type-check:watch": "yarn type-check -- --watch",
     "edmit-declarations": "tsc -d --noEmit false --emitDeclarationOnly --isolatedModules false --declarationDir \"./dist/types/\"",
-    "build": "rollup -c && yarn edmit-declarations"
+    "build": "yarn clean && rollup -c && yarn edmit-declarations"
   },
   "peerDependencies": {
     "react": "^16.8.4",
@@ -29,6 +30,7 @@
     "@types/styled-components": "^4.1.12",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "rimraf": "^2.6.3",
     "rollup": "^1.6.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.2.1",

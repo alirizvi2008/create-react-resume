@@ -2,14 +2,16 @@ import * as React from 'react'
 import useUIComponents from '../useUIComponents'
 
 interface Props {
+  email?: string
+  linkedin?: string
   github?: string
 }
 
 const Navigation: React.FunctionComponent<Props> = props => {
-  const { children, github } = props
+  const { children, ...rest } = props
   const { Navigation } = useUIComponents()
 
-  return <Navigation github={github}>{children}</Navigation>
+  return <Navigation {...rest}>{children}</Navigation>
 }
 
 export default Navigation

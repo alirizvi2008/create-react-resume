@@ -2,8 +2,8 @@ import * as React from 'react'
 import AsyncMdxComponent from '../AsyncMdxComponent'
 import useUIComponents from '../useUIComponents'
 
-const Resume: React.FunctionComponent = props => {
-  const { ResumePage } = useUIComponents()
+const Roles: React.FunctionComponent = props => {
+  const { RolesPage } = useUIComponents()
   const [exps, setExps] = React.useState<any>([])
   const loadExperience = async () => {
     const { default: experiences } = await import('./loader')
@@ -17,12 +17,12 @@ const Resume: React.FunctionComponent = props => {
   }, [])
 
   return (
-    <ResumePage>
+    <RolesPage>
       {exps.map((e: any, index: number) => {
         return <AsyncMdxComponent key={index} getView={e.getView} />
       })}
-    </ResumePage>
+    </RolesPage>
   )
 }
 
-export default Resume
+export default Roles
