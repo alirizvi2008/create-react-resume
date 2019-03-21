@@ -9,9 +9,7 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "type-check:watch": "yarn type-check -- --watch",
-    "build:types": "tsc -d --isolatedModules false",
-    "build:js": "rollup -c",
-    "build": "yarn build:types && yarn build:js"
+    "build": "rollup -c"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
