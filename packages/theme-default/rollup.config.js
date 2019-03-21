@@ -11,7 +11,7 @@ export default {
 
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
   // https://rollupjs.org/guide/en#external-e-external
-  external: ['react', 'react-dom', 'styled-components'],
+  external: Object.keys(pkg.peerDependencies) || [],
 
   plugins: [
     // Allows node_modules resolution
@@ -23,22 +23,9 @@ export default {
 
   output: [
     {
-      file: pkg.main,
-      format: 'umd',
-      name,
-    },
-    {
       file: pkg.module,
       format: 'es',
       name,
-    },
-    {
-      file: pkg.browser,
-      format: 'iife',
-      name,
-
-      // https://rollupjs.org/guide/en#output-globals-g-globals
-      globals: {},
     },
   ],
 }
