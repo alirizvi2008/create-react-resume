@@ -23,7 +23,7 @@ const App: React.FunctionComponent = () => {
           <Theme.Page>
             <Theme.Header>
               <Navigation
-                email="mac.malkowski@gmail.com"
+                email="mailto:mac.malkowski@gmail.com"
                 github="https://github.com/matmalkowski"
                 linkedin="https://www.linkedin.com/in/maciejmalkowski/"
               >
