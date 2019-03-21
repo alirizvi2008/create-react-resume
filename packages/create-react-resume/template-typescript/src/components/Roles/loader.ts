@@ -9,7 +9,6 @@ const loader = expPathnamses.map(async (pathname: string) => {
   return {
     getView: async () => {
       let { default: MDXComponent, ...other } = await experience.getContent()
-      console.log(MDXComponent)
       return { MDXComponent, ...other }
     },
   }
