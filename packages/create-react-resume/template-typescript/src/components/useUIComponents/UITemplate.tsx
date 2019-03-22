@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { UIContext, UIComponents } from './UIProvider'
+import { UIContext, UIContextComponents } from './UIProvider'
 
-interface Props extends UIComponents {}
+interface Props extends UIContextComponents {}
 
 const UITemplate: React.FunctionComponent<Props> = props => {
   const { children, ...uiTemplate } = props

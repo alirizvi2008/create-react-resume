@@ -11,7 +11,11 @@ interface NavigationProps {
   github?: string
 }
 
-export interface UIComponents {
+export interface ElementComponents {
+  p: React.FC
+}
+
+export interface LayoutComponents {
   Navigation: React.FunctionComponent<NavigationProps>
   HomePage: React.FunctionComponent<HomePageProps>
   SkillsPage: React.FunctionComponent
@@ -19,6 +23,11 @@ export interface UIComponents {
   Education: React.FunctionComponent
 }
 
-const UIContext = React.createContext<UIComponents>({} as UIComponents)
+export interface UIContextComponents {
+  layouts: LayoutComponents
+  elements: ElementComponents
+}
+
+const UIContext = React.createContext<UIContextComponents>({} as UIContextComponents)
 
 export { UIContext }

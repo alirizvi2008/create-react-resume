@@ -2,7 +2,9 @@ import * as React from 'react'
 import { UIContext } from './UIProvider'
 
 const useUIComponents = () => {
-  return React.useContext(UIContext)
+  const { layouts } = React.useContext(UIContext)
+
+  return layouts
 }
 
 export default useUIComponents

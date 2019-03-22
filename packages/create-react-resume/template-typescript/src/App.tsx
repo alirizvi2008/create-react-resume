@@ -6,18 +6,23 @@ import { UITemplate } from './components/useUIComponents'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import * as Theme from '@create-react-resume/theme-default'
 import Skills from './components/Skills'
-import Education from './components/Education'
+import EducationRoute from './pages/education'
 
 const App: React.FunctionComponent = () => {
   return (
     <>
       <Router>
         <UITemplate
-          Navigation={Theme.Navbar}
-          HomePage={Theme.HomePage}
-          SkillsPage={Theme.SectionsPage}
-          RolesPage={Theme.SectionsPage}
-          Education={Theme.SectionsPage}
+          layouts={{
+            Navigation: Theme.Navbar,
+            HomePage: Theme.HomePage,
+            SkillsPage: Theme.SectionsPage,
+            RolesPage: Theme.SectionsPage,
+            Education: Theme.SectionsPage,
+          }}
+          elements={{
+            p: props => <p {...props} />,
+          }}
         >
           <Theme.CssBaseline />
           <Theme.Page>
@@ -37,7 +42,7 @@ const App: React.FunctionComponent = () => {
               <Route path="/" exact component={Home} />
               <Route path="/skills" component={Skills} />
               <Route path="/roles" component={Roles} />
-              <Route path="/education" component={Education} />
+              <EducationRoute />
             </Theme.Main>
             <Theme.Footer>
               Made with ❤️ using{' '}
