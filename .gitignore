@@ -1,3 +1,4 @@
 node_modules
 /packages/react-resume-default-theme/dist/
 /packages/theme-default/dist/
+/packages/core/dist/

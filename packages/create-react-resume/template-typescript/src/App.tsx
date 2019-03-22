@@ -1,12 +1,11 @@
 import React from 'react'
-import Roles from './components/Roles'
-import Navigation from './components/Navigation'
-import { UITemplate } from './components/useUIComponents'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { UITemplate, Navigation } from '@create-react-resume/core'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 import * as Theme from '@create-react-resume/theme-default'
 import EducationRoute from './pages/education'
 import SkillsRoute from './pages/skills'
 import HomeRoute from './pages/home'
+import RolesRoute from './pages/roles'
 
 const App: React.FunctionComponent = () => {
   return (
@@ -41,7 +40,7 @@ const App: React.FunctionComponent = () => {
             <Theme.Main>
               <HomeRoute />
               <SkillsRoute />
-              <Route path="/roles" component={Roles} />
+              <RolesRoute />
               <EducationRoute />
             </Theme.Main>
             <Theme.Footer>

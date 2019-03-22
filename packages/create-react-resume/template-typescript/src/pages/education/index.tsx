@@ -1,7 +1,7 @@
 import EducationMDX from './education.mdx'
 import * as React from 'react'
 import { Route } from 'react-router'
-import { useUIComponents, MDXThemeProvider } from '../../components/useUIComponents'
+import { useUIComponents, MDXThemeProvider } from '@create-react-resume/core'
 
 const EducationRoute: React.FC = () => {
   const { Education } = useUIComponents()

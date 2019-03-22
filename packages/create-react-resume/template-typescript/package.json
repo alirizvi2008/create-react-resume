@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@create-react-resume/theme-default": "1.0.0",
+    "@create-react-resume/core": "1.0.0",
     "@types/jest": "24.0.11",
     "@types/lodash": "^4.14.122",
     "@types/node": "11.11.0",
