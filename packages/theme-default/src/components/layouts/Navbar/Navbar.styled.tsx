@@ -1,4 +1,4 @@
-import styled from '../../styled'
+import styled from '../../../styled'
 import { Container, Left, Right } from '../SplitContainer'
 
 const NavbarContainer = styled(Container)`

@@ -21,6 +21,12 @@ const App: React.FunctionComponent = () => {
           }}
           elements={{
             p: props => <p {...props} />,
+            h1: (props: any) => <Theme.H1 {...props} />,
+            h2: (props: any) => <Theme.H2 {...props} />,
+            h3: (props: any) => <Theme.H3 {...props} />,
+            h4: (props: any) => <Theme.H4 {...props} />,
+            h5: (props: any) => <Theme.H5 {...props} />,
+            h6: (props: any) => <Theme.H6 {...props} />,
           }}
         >
           <Theme.CssBaseline />
