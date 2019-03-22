@@ -1,6 +1,6 @@
 import * as React from 'react'
 import AsyncMdxComponent from '../AsyncMdxComponent'
-import useUIComponents from '../useUIComponents'
+import { useUIComponents } from '../useUIComponents'
 
 const Roles: React.FunctionComponent = props => {
   const { RolesPage } = useUIComponents()

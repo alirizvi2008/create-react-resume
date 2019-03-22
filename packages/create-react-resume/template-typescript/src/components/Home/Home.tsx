@@ -1,6 +1,6 @@
 import * as React from 'react'
 import homeData from '../../pages/home/home-data'
-import useUIComponents from '../useUIComponents'
+import { useUIComponents } from '../useUIComponents'
 
 const Home: React.FunctionComponent = () => {
   const { HomePage } = useUIComponents()

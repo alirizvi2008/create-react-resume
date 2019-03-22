@@ -1,12 +1,12 @@
 import React from 'react'
-import Home from './components/Home'
 import Roles from './components/Roles'
 import Navigation from './components/Navigation'
 import { UITemplate } from './components/useUIComponents'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import * as Theme from '@create-react-resume/theme-default'
-import Skills from './components/Skills'
 import EducationRoute from './pages/education'
+import SkillsRoute from './pages/skills'
+import HomeRoute from './pages/home'
 
 const App: React.FunctionComponent = () => {
   return (
@@ -39,8 +39,8 @@ const App: React.FunctionComponent = () => {
               </Navigation>
             </Theme.Header>
             <Theme.Main>
-              <Route path="/" exact component={Home} />
-              <Route path="/skills" component={Skills} />
+              <HomeRoute />
+              <SkillsRoute />
               <Route path="/roles" component={Roles} />
               <EducationRoute />
             </Theme.Main>

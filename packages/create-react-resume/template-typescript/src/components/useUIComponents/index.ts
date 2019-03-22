@@ -1,6 +1,5 @@
 import useUIComponents from './useUIComponents'
 import UITemplate from './UITemplate'
-import MDXTemplate from './MDXTheme'
+import MDXThemeProvider from './MDXThemeProvider'
 
-export { UITemplate, MDXTemplate }
-export default useUIComponents
+export { useUIComponents, UITemplate, MDXThemeProvider }

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import useUIComponents from '../useUIComponents'
+import { useUIComponents } from '../useUIComponents'
 
 interface Props {
   email?: string

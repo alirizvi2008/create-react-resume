@@ -1,23 +1,23 @@
-import EducationMDX from './education.mdx'
+import SkillsMDX from './skills.mdx'
 import * as React from 'react'
 import { Route } from 'react-router'
 import { useUIComponents, MDXThemeProvider } from '../../components/useUIComponents'
 
-const EducationRoute: React.FC = () => {
-  const { Education } = useUIComponents()
+const SkillsRoute: React.FC = () => {
+  const { SkillsPage } = useUIComponents()
 
   return (
     <Route
-      path="/education"
+      path="/skills"
       component={() => (
-        <Education>
+        <SkillsPage>
           <MDXThemeProvider>
-            <EducationMDX />
+            <SkillsMDX />
           </MDXThemeProvider>
-        </Education>
+        </SkillsPage>
       )}
     />
   )
 }
 
-export default EducationRoute
+export default SkillsRoute
