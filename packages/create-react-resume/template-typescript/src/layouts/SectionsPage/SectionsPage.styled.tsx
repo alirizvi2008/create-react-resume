@@ -1,4 +1,4 @@
-import styled from '../../../styled'
+import styled from 'styled-components'
 import { Right, Left } from '../SplitContainer'
 
 const SectionsContainer = styled('div')`

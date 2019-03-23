@@ -1,7 +1,7 @@
 import React from 'react'
 import { UITemplate, Navigation } from '@create-react-resume/core'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
-import * as Theme from '@create-react-resume/theme-default'
+import * as Theme from './layouts'
 import EducationRoute from './pages/education'
 import SkillsRoute from './pages/skills'
 import HomeRoute from './pages/home'
