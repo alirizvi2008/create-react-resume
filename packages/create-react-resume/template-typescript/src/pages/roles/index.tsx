@@ -6,17 +6,20 @@ import { useUIComponents, MDXThemeProvider, useMDXFiles } from '@create-react-re
 const RolesRoute: React.FunctionComponent = () => {
   const { RolesPage } = useUIComponents()
   const mdxModules = useMDXFiles(importAll.deferred('./**/*.mdx'))
+  const mdxModulesDesc = [...mdxModules].reverse()
   return (
     <Route
       path="/roles"
       component={() => (
         <RolesPage>
-          <MDXThemeProvider>
-            {mdxModules.map((e: any, index: number) => {
-              const { MDXComponent, ...other } = e
-              return <MDXComponent {...other} key={index} />
-            })}
-          </MDXThemeProvider>
+          {mdxModulesDesc.map((e: any, index: number) => {
+            const { MDXComponent, ...other } = e
+            return (
+              <MDXThemeProvider>
+                <MDXComponent {...other} key={index} />
+              </MDXThemeProvider>
+            )
+          })}
         </RolesPage>
       )}
     />

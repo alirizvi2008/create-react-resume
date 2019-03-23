@@ -13,12 +13,6 @@ const SectionRight = styled(Right)`
   section {
     padding: 64px 0 0 16px;
     width: 75%;
-    svg {
-      height: 32px;
-      position: absolute;
-      left: 10%;
-      margin-top: 32px;
-    }
   }
 `
 

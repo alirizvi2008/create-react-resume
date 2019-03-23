@@ -6,6 +6,7 @@ import EducationRoute from './pages/education'
 import SkillsRoute from './pages/skills'
 import HomeRoute from './pages/home'
 import RolesRoute from './pages/roles'
+import * as LocalTheme from './elements'
 
 const App: React.FunctionComponent = () => {
   return (
@@ -20,13 +21,19 @@ const App: React.FunctionComponent = () => {
             Education: Theme.SectionsPage,
           }}
           elements={{
-            p: props => <p {...props} />,
-            h1: (props: any) => <Theme.H1 {...props} />,
-            h2: (props: any) => <Theme.H2 {...props} />,
-            h3: (props: any) => <Theme.H3 {...props} />,
-            h4: (props: any) => <Theme.H4 {...props} />,
-            h5: (props: any) => <Theme.H5 {...props} />,
-            h6: (props: any) => <Theme.H6 {...props} />,
+            p: (props: any) => <LocalTheme.Paragraph {...props} />,
+            h1: (props: any) => <LocalTheme.H1 {...props} />,
+            h2: (props: any) => <LocalTheme.H2 {...props} />,
+            h3: (props: any) => <LocalTheme.H3 {...props} />,
+            h4: (props: any) => <LocalTheme.H4 {...props} />,
+            h5: (props: any) => <LocalTheme.H5 {...props} />,
+            h6: (props: any) => <LocalTheme.H6 {...props} />,
+            a: (props: any) => <LocalTheme.Link {...props} />,
+            blockquote: (props: any) => <LocalTheme.Blockquote {...props} />,
+            hr: (props: any) => <LocalTheme.Hr {...props} />,
+            inlineCode: (props: any) => <LocalTheme.InlineCode {...props} />,
+            ol: (props: any) => <LocalTheme.OrderedList {...props} />,
+            ul: (props: any) => <LocalTheme.UnorderedList {...props} />,
           }}
         >
           <Theme.CssBaseline />
