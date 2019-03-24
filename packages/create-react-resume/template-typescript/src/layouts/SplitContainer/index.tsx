@@ -1,26 +1,26 @@
 import styled from 'styled-components'
 
-const Container = styled('div')`
-  margin: 0;
+const SplitContainer = styled('div')`
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 `
 
 const Left = styled('div')`
   width: 30%;
-  height: 100%;
   color: #673ab7;
+  /* background-color: pink; */
 `
 
 const Right = styled('div')`
   width: 70%;
-  background: rgb(103, 58, 183);
-  background: linear-gradient(90deg, rgba(103, 58, 183, 1) 0%, rgba(126, 87, 194, 1) 100%);
-  height: 100%;
   color: white;
+  /* background-color: aquamarine; */
 `
 
-export { Container, Left, Right }
+const CenterVertical = styled('div')`
+  display: flex;
+  align-items: center;
+`
+
+export { SplitContainer, Left, Right, CenterVertical }

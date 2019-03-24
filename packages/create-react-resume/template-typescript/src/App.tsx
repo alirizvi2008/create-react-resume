@@ -37,30 +37,27 @@ const App: React.FunctionComponent = () => {
           }}
         >
           <Theme.CssBaseline />
-          <Theme.Page>
-            <Theme.Header>
-              <Navigation
-                email="mailto:mac.malkowski@gmail.com"
-                github="https://github.com/matmalkowski"
-                linkedin="https://www.linkedin.com/in/maciejmalkowski/"
-              >
-                <Link to="/">Home</Link>
-                <Link to="/roles">Roles</Link>
-                <Link to="/skills">Skills</Link>
-                <Link to="/education">Education</Link>
-              </Navigation>
-            </Theme.Header>
-            <Theme.Main>
-              <HomeRoute />
-              <RolesRoute />
-              <SkillsRoute />
-              <EducationRoute />
-            </Theme.Main>
-            <Theme.Footer>
-              Made with ❤️ using{' '}
-              <a href="https://github.com/matmalkowski/create-react-resume">Create React Resume 📄</a>
-            </Theme.Footer>
-          </Theme.Page>
+          <Theme.Header>
+            <Navigation
+              email="mailto:mac.malkowski@gmail.com"
+              github="https://github.com/matmalkowski"
+              linkedin="https://www.linkedin.com/in/maciejmalkowski/"
+            >
+              <Link to="/">Home</Link>
+              <Link to="/roles">Roles</Link>
+              <Link to="/skills">Skills</Link>
+              <Link to="/education">Education</Link>
+            </Navigation>
+          </Theme.Header>
+          <Theme.Main>
+            <HomeRoute />
+            <RolesRoute />
+            <SkillsRoute />
+            <EducationRoute />
+          </Theme.Main>
+          <Theme.Footer>
+            Made with ❤️ using <a href="https://github.com/matmalkowski/create-react-resume">Create React Resume 📄</a>
+          </Theme.Footer>
         </UITemplate>
       </Router>
     </>
