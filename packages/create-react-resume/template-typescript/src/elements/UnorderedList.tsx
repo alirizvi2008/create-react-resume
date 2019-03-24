@@ -12,4 +12,7 @@ export default styled.ul`
     font-size: 1em;
     margin-right: 5px;
   }
+  @media (max-width: 768px) {
+    font-size: 0.75rem;
+  }
 `

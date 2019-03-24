@@ -11,6 +11,7 @@ const HomeContainer = styled('div')`
     font-size: 100px;
     @media screen and (max-width: 600px) {
       font-size: 36px;
+      margin: 0 20px;
     }
     font-weight: 800;
   }
@@ -29,16 +30,13 @@ const HomeContainer = styled('div')`
     @media screen and (max-width: 600px) {
       font-size: 14px;
     }
-    max-width: 75%;
+    max-width: 80%;
     color: #f5f5f5;
   }
   img {
-    margin: 0 64px;
-    width: 60%;
+    margin: 0 15%;
+    width: 70%;
     border-radius: 50%;
-    @media screen and (max-width: 600px) {
-      margin: 0 32px;
-    }
   }
 `
 

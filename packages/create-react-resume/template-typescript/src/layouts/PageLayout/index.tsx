@@ -27,10 +27,14 @@ const Main = styled('main')`
 `
 
 const FooterContainer = styled('footer')`
-  height: 50px;
-  /* background-color: blue; */
-  & > div {
-    height: 100%;
+  font-size: 12px;
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
+  text-align: center;
+  > div > div {
+    padding: 4px;
   }
 `
 
