@@ -7,9 +7,12 @@ const Logo = styled.div`
   text-align: right;
 
   > * {
-    height: 80px;
-    max-width: 120px;
-    margin: 1rem 3rem 0 0;
+    max-width: 40%;
+    margin: 1.5rem 10%;
+    @media (max-width: 768px) {
+      max-width: 80%;
+      margin: 1rem 10%;
+    }
   }
 `
 export default Logo

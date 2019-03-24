@@ -12,7 +12,11 @@ const SectionLeft = styled(Left)``
 const SectionRight = styled(Right)`
   section {
     padding: 64px 0 0 16px;
-    width: 75%;
+    width: 80%;
+    @media (max-width: 768px) {
+      padding: 64px 16px 0 16px;
+      width: auto;
+    }
   }
 `
 
