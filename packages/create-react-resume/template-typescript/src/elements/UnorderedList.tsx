@@ -4,6 +4,9 @@ export default styled.ul`
   list-style: none;
   margin: 1rem;
   padding: 0;
+  & li {
+    margin: 0.25rem 0;
+  }
   & li::before {
     content: '- ';
     font-size: 1em;

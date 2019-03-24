@@ -45,15 +45,15 @@ const App: React.FunctionComponent = () => {
                 linkedin="https://www.linkedin.com/in/maciejmalkowski/"
               >
                 <Link to="/">Home</Link>
-                <Link to="/skills">Skills</Link>
                 <Link to="/roles">Roles</Link>
+                <Link to="/skills">Skills</Link>
                 <Link to="/education">Education</Link>
               </Navigation>
             </Theme.Header>
             <Theme.Main>
               <HomeRoute />
-              <SkillsRoute />
               <RolesRoute />
+              <SkillsRoute />
               <EducationRoute />
             </Theme.Main>
             <Theme.Footer>
