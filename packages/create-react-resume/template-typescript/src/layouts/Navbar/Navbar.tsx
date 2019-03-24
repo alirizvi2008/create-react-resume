@@ -6,10 +6,11 @@ interface Props {
   email?: string
   linkedin?: string
   github?: string
+  medium?: string
 }
 
 const Navbar: React.FunctionComponent<Props> = props => {
-  const { email, github, linkedin, children } = props
+  const { email, github, linkedin, medium, children } = props
 
   return (
     <>
@@ -41,6 +42,15 @@ const Navbar: React.FunctionComponent<Props> = props => {
             <a href={linkedin} target="_blank">
               <svg viewBox="0 0 24 24">
                 <path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z" />
+              </svg>
+            </a>
+          </li>
+        )}
+        {medium && (
+          <li>
+            <a href={medium} target="_blank">
+              <svg viewBox="0 0 24 24">
+                <path d="M4.37,7.3C4.4,7.05 4.3,6.81 4.12,6.65L2.25,4.4V4.06H8.05L12.53,13.89L16.47,4.06H22V4.4L20.4,5.93C20.27,6.03 20.2,6.21 20.23,6.38V17.62C20.2,17.79 20.27,17.97 20.4,18.07L21.96,19.6V19.94H14.12V19.6L15.73,18.03C15.89,17.88 15.89,17.83 15.89,17.59V8.5L11.4,19.9H10.8L5.57,8.5V16.14C5.5,16.46 5.63,16.78 5.86,17L7.96,19.57V19.9H2V19.57L4.1,17C4.33,16.78 4.43,16.46 4.37,16.14V7.3Z" />
               </svg>
             </a>
           </li>

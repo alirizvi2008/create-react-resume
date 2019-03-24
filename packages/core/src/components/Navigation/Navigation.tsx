@@ -5,6 +5,7 @@ interface Props {
   email?: string
   linkedin?: string
   github?: string
+  medium?: string
 }
 
 const Navigation: React.FunctionComponent<Props> = props => {

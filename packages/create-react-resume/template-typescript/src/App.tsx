@@ -42,6 +42,7 @@ const App: React.FunctionComponent = () => {
               email="mailto:mac.malkowski@gmail.com"
               github="https://github.com/matmalkowski"
               linkedin="https://www.linkedin.com/in/maciejmalkowski/"
+              medium="https://medium.com/@mat.malkowski"
             >
               <Link to="/">Home</Link>
               <Link to="/roles">Roles</Link>

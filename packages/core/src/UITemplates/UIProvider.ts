@@ -8,7 +8,10 @@ interface HomePageProps {
 }
 
 interface NavigationProps {
+  email?: string
+  linkedin?: string
   github?: string
+  medium?: string
 }
 
 export interface ElementComponents {
