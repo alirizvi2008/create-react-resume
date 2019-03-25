@@ -19,7 +19,7 @@ const os = require('os')
 
 const packageJson = require('./package.json')
 
-const tarballURL = 'https://github.com/matmalkowski/create-react-resume/tree/master/tar.gz/master'
+const tarballURL = 'https://codeload.github.com/matmalkowski/create-react-resume/legacy.tar.gz/master'
 const subPackage = 'packages/templates/'
 
 // These files should be allowed to remain on a failed install,
