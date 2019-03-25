@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 'use strict'
 
 const validateProjectName = require('validate-npm-package-name')
@@ -92,9 +94,9 @@ const hiddenProgram = new commander.Command()
   )
   .parse(process.argv)
 
-createBlog(projectName, program.verbose, program.useNpm, program.typescript, hiddenProgram.internalTestingTarball)
+createResume(projectName, program.verbose, program.useNpm, program.typescript, hiddenProgram.internalTestingTarball)
 
-function createBlog(name, verbose, useNpm, useTypescript, tarball = tarballURL) {
+function createResume(name, verbose, useNpm, useTypescript, tarball = tarballURL) {
   const root = path.resolve(name)
   const appName = path.basename(root)
 
@@ -209,7 +211,7 @@ async function run(root, appName, verbose, tarball, useTypescript, useYarn) {
         ' and ' +
         chalk.cyan(`${displayedCommand} ${useYarn ? '' : 'run '}deploy:prod`)
     )
-    console.log('    Deploys your blog with Netlify.')
+    console.log('    Deploys your resume page with Netlify.')
     console.log()
     console.log(chalk.cyan(`  ${displayedCommand} ${useYarn ? '' : 'run '}eject`))
     console.log('    Removes this tool and copies build dependencies, configuration files')
