@@ -1,7 +1,7 @@
 {
   "name": "create-react-resume",
   "description": "Initialize a React resume with create-react-app, MDX, and React Router",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Mat Malkowski <monkey3310@gmail.com>",
   "bin": {
