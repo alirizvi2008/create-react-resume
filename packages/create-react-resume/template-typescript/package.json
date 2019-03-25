@@ -13,6 +13,7 @@
     "@types/react-router-dom": "^4.3.1",
     "import-all.macro": "^2.0.3",
     "lodash": "^4.17.11",
+    "netlify-cli": "^2.9.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",
@@ -24,6 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "deploy": "yarn build && netlify deploy --dir=build",
+    "deploy:prod": "yarn build && netlify deploy --dir=build --prod",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
