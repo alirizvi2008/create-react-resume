@@ -9,7 +9,7 @@ interface Props {
   medium?: string
 }
 
-const Navbar: React.FunctionComponent<Props> = props => {
+const Navbar: React.FC<Props> = props => {
   const { email, github, linkedin, medium, children } = props
 
   return (

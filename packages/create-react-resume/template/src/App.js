@@ -8,7 +8,7 @@ import RolesRoute from './pages/roles'
 import theme from './theme'
 import { CssBaseline, Header, Main, Footer } from '@create-react-resume/theme-default'
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <>
       <Router>
@@ -39,7 +39,7 @@ const App: React.FC = () => {
               <span role="img" aria-label="document">
                 📄
               </span>
-            </a>{' '}
+            </a>
           </Footer>
         </UITemplate>
       </Router>

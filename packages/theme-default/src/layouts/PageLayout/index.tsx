@@ -4,7 +4,7 @@ import { Left, Right, SplitContainer } from '../SplitContainer'
 
 const HeaderContainer = styled('header')``
 
-const Header: React.FunctionComponent = props => {
+const Header: React.FC = props => {
   const { children } = props
   return (
     <HeaderContainer>
@@ -32,7 +32,7 @@ const FooterContainer = styled('footer')`
   }
 `
 
-const Footer: React.FunctionComponent = props => {
+const Footer: React.FC = props => {
   const { children } = props
   return (
     <FooterContainer>

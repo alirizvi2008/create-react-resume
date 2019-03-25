@@ -3,7 +3,7 @@ import importAll from 'import-all.macro'
 import { Route } from 'react-router'
 import { useUIComponents, MDXThemeProvider, useMDXFiles } from '@create-react-resume/core'
 
-const RolesRoute: React.FC = () => {
+const RolesRoute = () => {
   const { RolesPage } = useUIComponents()
   const mdxModules = useMDXFiles(importAll.deferred('./**/*.mdx'))
   const mdxModulesDesc = [...mdxModules].reverse()
@@ -12,7 +12,7 @@ const RolesRoute: React.FC = () => {
       path="/roles"
       component={() => (
         <RolesPage>
-          {mdxModulesDesc.map((e: any, index: number) => {
+          {mdxModulesDesc.map((e, index) => {
             const { MDXComponent, ...other } = e
             return (
               <MDXThemeProvider>

@@ -3,7 +3,7 @@ import { UIContext, UIContextComponents } from './UIProvider'
 
 interface Props extends UIContextComponents {}
 
-const UITemplate: React.FunctionComponent<Props> = props => {
+const UITemplate: React.FC<Props> = props => {
   const { children, ...uiTemplate } = props
   return <UIContext.Provider value={uiTemplate}>{children}</UIContext.Provider>
 }

@@ -8,7 +8,7 @@ interface Props {
   medium?: string
 }
 
-const Navigation: React.FunctionComponent<Props> = props => {
+const Navigation: React.FC<Props> = props => {
   const { children, ...rest } = props
   const { Navigation } = useUIComponents()
 

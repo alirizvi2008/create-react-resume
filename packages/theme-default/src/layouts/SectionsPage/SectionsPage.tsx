@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { SectionsContainer, Left, Right } from './SectionsPage.styled'
 
-const SectionsPage: React.FunctionComponent = props => {
+const SectionsPage: React.FC = props => {
   const { children } = props
   return (
     <SectionsContainer>

@@ -19,11 +19,11 @@ export interface ElementComponents {
 }
 
 export interface LayoutComponents {
-  Navigation: React.FunctionComponent<NavigationProps>
-  HomePage: React.FunctionComponent<HomePageProps>
-  SkillsPage: React.FunctionComponent
-  RolesPage: React.FunctionComponent
-  Education: React.FunctionComponent
+  Navigation: React.FC<NavigationProps>
+  HomePage: React.FC<HomePageProps>
+  SkillsPage: React.FC
+  RolesPage: React.FC
+  Education: React.FC
 }
 
 export interface UIContextComponents {

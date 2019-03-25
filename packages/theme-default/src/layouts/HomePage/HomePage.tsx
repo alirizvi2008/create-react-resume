@@ -9,7 +9,7 @@ interface Props {
   descriptions: string[]
 }
 
-const HomePage: React.FunctionComponent<Props> = props => {
+const HomePage: React.FC<Props> = props => {
   const { profilePicUrl, title, subTitle, descriptions } = props
   return (
     <HomeContainer>

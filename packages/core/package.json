@@ -4,7 +4,7 @@
     "name": "monkey3310",
     "email": "monkey3310@gmail.com"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.esm.js",
   "license": "MIT",
   "module": "dist/index.esm.js",
