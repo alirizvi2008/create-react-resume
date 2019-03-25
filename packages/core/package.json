@@ -1,11 +1,18 @@
 {
   "name": "@create-react-resume/core",
-  "version": "1.0.0",
+  "author": {
+    "name": "monkey3310",
+    "email": "monkey3310@gmail.com"
+  },
+  "version": "0.1.0",
   "main": "dist/index.esm.js",
   "license": "MIT",
   "module": "dist/index.esm.js",
   "browser": "dist/index.iife.js",
   "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "clean": "rimraf ./dist",
     "type-check": "tsc --noEmit",

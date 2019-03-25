@@ -1,6 +1,13 @@
 {
   "name": "@create-react-resume/theme-default",
-  "version": "1.0.0",
+  "author": {
+    "name": "monkey3310",
+    "email": "monkey3310@gmail.com"
+  },
+  "version": "0.1.0",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.esm.js",
   "license": "MIT",
   "module": "dist/index.esm.js",
