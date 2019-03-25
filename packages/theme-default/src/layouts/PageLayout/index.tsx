@@ -2,12 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { Left, Right, SplitContainer } from '../SplitContainer'
 
-const HeaderContainer = styled('header')`
-  /* background-color: purple; */
-  & > div {
-    /* height: 100%; */
-  }
-`
+const HeaderContainer = styled('header')``
 
 const Header: React.FunctionComponent = props => {
   const { children } = props
@@ -23,7 +18,6 @@ const Header: React.FunctionComponent = props => {
 
 const Main = styled('main')`
   flex: 1 1 0;
-  /* background-color: darkgreen; */
 `
 
 const FooterContainer = styled('footer')`

@@ -1,5 +1,6 @@
 import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
+import commonjs from 'rollup-plugin-commonjs'
 import pkg from './package.json'
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx']
@@ -14,8 +15,13 @@ export default {
   external: Object.keys(pkg.peerDependencies) || [],
 
   plugins: [
+    commonjs({
+      namedExports: {
+        'node_modules/date-fns/index.js': Object.keys(require('date-fns')),
+      },
+    }),
     // Allows node_modules resolution
-    resolve({ extensions }),
+    resolve({ extensions, jsnext: true, main: true }),
 
     // Compile TypeScript/JavaScript files
     babel({ extensions, include: ['src/**/*'], exclude: 'node_modules/**' }),

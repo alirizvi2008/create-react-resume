@@ -4,7 +4,6 @@ const HomeContainer = styled('div')`
   display: flex;
   align-items: center;
   height: 100%;
-  /* background-color: red; */
 
   h1 {
     margin: 0 16px;

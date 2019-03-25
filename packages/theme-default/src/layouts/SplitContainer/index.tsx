@@ -9,13 +9,11 @@ const SplitContainer = styled('div')`
 const Left = styled('div')`
   width: 30%;
   color: #673ab7;
-  /* background-color: pink; */
 `
 
 const Right = styled('div')`
   width: 70%;
   color: white;
-  /* background-color: aquamarine; */
 `
 
 const CenterVertical = styled('div')`

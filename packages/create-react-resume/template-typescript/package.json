@@ -11,7 +11,6 @@
     "@types/react": "16.8.7",
     "@types/react-dom": "16.8.2",
     "@types/react-router-dom": "^4.3.1",
-    "date-fns": "^1.30.1",
     "import-all.macro": "^2.0.3",
     "lodash": "^4.17.11",
     "react": "^16.8.4",
@@ -35,8 +34,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "@types/date-fns": "^2.6.0"
-  }
+  ]
 }
