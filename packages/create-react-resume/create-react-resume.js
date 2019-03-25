@@ -20,7 +20,7 @@ const os = require('os')
 const packageJson = require('./package.json')
 
 const tarballURL = 'https://github.com/matmalkowski/create-react-resume/tree/master/tar.gz/master'
-const subPackage = 'packages/create-react-resume/'
+const subPackage = 'packages/templates/'
 
 // These files should be allowed to remain on a failed install,
 // but then silently removed during the next create.
@@ -294,7 +294,7 @@ async function createTemplate(tarball, root, useTypescript) {
       directory = tarball
     }
 
-    let from = path.join(directory, subPackage, useTypescript ? 'template-typescript' : 'template')
+    let from = path.join(directory, subPackage, useTypescript ? 'typescript' : 'javascript')
     fs.copySync(from, root)
   } finally {
     if (temp) {
