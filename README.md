@@ -1,3 +1,7 @@
+![npm](https://img.shields.io/npm/v/create-react-resume.svg)
+![npm](https://img.shields.io/npm/dw/create-react-resume.svg)
+![GitHub](https://img.shields.io/github/license/matmalkowski/create-react-resume.svg)
+
 # 📄 `npx create-react-resume`
 
 Create resume / home page with **[create-react-app](https://facebook.github.io/create-react-app/)** & **[MDX](https://mdxjs.com/)**
