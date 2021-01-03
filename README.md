@@ -54,13 +54,15 @@ How to...
 
 **To share your skills,** edit `src\pages\skills\skills.mdx`
 
-**To edit links on header to _mail_, _github_, _linkedin_ & _medium_,** edit the props `<Navigation />` component in `src\App.tsx`:
+**To edit links on header to _mail_, _github_, _linkedin_, _medium_, _twitter_ & _stackoverflow_,** edit the props `<Navigation />` component in `src\App.tsx`:
 ```jsx
 <Navigation
   email="mailto:youremail@gmail.com"
   github="https://github.com/matmalkowski"
   linkedin="https://www.linkedin.com/in/yourusername"
   medium="https://medium.com/@your.username"
+  twitter="https://twitter.com/@your.username"
+  stackoverflow="https://stackoverflow.com/users/@your.userid"
 >
 ```
 

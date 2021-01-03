@@ -1,16 +1,17 @@
 import * as React from 'react'
 import { NavMenu, MenuButton, MenuIcon, Navicon, ExternalLinks } from './Navbar.styled'
-import { Left, Right, SplitContainer } from '../SplitContainer'
 
 interface Props {
   email?: string
   linkedin?: string
   github?: string
   medium?: string
+  twitter?: string
+  stackoverflow?: string
 }
 
 const Navbar: React.FC<Props> = props => {
-  const { email, github, linkedin, medium, children } = props
+  const { email, github, linkedin, medium, twitter, stackoverflow, children } = props
 
   return (
     <>
@@ -51,6 +52,24 @@ const Navbar: React.FC<Props> = props => {
             <a href={medium} target="_blank">
               <svg viewBox="0 0 24 24">
                 <path d="M4.37,7.3C4.4,7.05 4.3,6.81 4.12,6.65L2.25,4.4V4.06H8.05L12.53,13.89L16.47,4.06H22V4.4L20.4,5.93C20.27,6.03 20.2,6.21 20.23,6.38V17.62C20.2,17.79 20.27,17.97 20.4,18.07L21.96,19.6V19.94H14.12V19.6L15.73,18.03C15.89,17.88 15.89,17.83 15.89,17.59V8.5L11.4,19.9H10.8L5.57,8.5V16.14C5.5,16.46 5.63,16.78 5.86,17L7.96,19.57V19.9H2V19.57L4.1,17C4.33,16.78 4.43,16.46 4.37,16.14V7.3Z" />
+              </svg>
+            </a>
+          </li>
+        )}
+        {twitter && (
+          <li>
+            <a href={twitter} target="_blank">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z" />
+              </svg>
+            </a>
+          </li>
+        )}
+        {stackoverflow && (
+          <li>
+            <a href={stackoverflow} target="_blank">
+              <svg viewBox="0 0 24 24">
+                <path d="M15 21h-10v-2h10v2zm6-11.665l-1.621-9.335-1.993.346 1.62 9.335 1.994-.346zm-5.964 6.937l-9.746-.975-.186 2.016 9.755.879.177-1.92zm.538-2.587l-9.276-2.608-.526 1.954 9.306 2.5.496-1.846zm1.204-2.413l-8.297-4.864-1.029 1.743 8.298 4.865 1.028-1.744zm1.866-1.467l-5.339-7.829-1.672 1.14 5.339 7.829 1.672-1.14zm-2.644 4.195v8h-12v-8h-2v10h16v-10h-2z" />
               </svg>
             </a>
           </li>

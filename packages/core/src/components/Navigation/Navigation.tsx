@@ -6,6 +6,8 @@ interface Props {
   linkedin?: string
   github?: string
   medium?: string
+  twitter?: string
+  stackoverflow?: string
 }
 
 const Navigation: React.FC<Props> = props => {

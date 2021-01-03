@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@create-react-resume/core": "0.1.2",
-    "@create-react-resume/theme-default": "0.1.2",
+    "@create-react-resume/core": "0.1.3",
+    "@create-react-resume/theme-default": "0.1.3",
     "import-all.macro": "^2.0.3",
     "lodash": "^4.17.11",
     "netlify-cli": "^2.9.1",

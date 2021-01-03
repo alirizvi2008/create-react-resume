@@ -12,6 +12,8 @@ interface NavigationProps {
   linkedin?: string
   github?: string
   medium?: string
+  twitter?: string
+  stackoverflow?: string
 }
 
 export interface ElementComponents {

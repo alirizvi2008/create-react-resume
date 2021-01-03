@@ -15,7 +15,14 @@ const App = () => {
         <UITemplate {...theme}>
           <CssBaseline />
           <Header>
-            <Navigation email="mailto:#" github="https://github.com/matmalkowski" linkedin="#" medium="#">
+            <Navigation
+              email="mailto:#"
+              github="https://github.com/matmalkowski"
+              linkedin="#"
+              medium="#"
+              twitter="#"
+              stackoverflow="#"
+            >
               <Link to="/">Home</Link>
               <Link to="/roles">Roles</Link>
               <Link to="/skills">Skills</Link>
