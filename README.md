@@ -30,7 +30,7 @@ yarn start
 If you'd like to use TypeScript, just pass in a `--typescript` option:
 
 ```bash
-npx reate-react-resume react-resume --typescript
+npx create-react-resume react-resume --typescript
 ```
 
 The quickest and easiet way to deploy your blog is with [Netlify](https://netlify.com/), which is already set up and ready to go:
